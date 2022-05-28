@@ -10,7 +10,9 @@ public class PeekExample {
      List<String> strings= Stream.of("One", "Two", "Three")
              .filter(obj -> !obj.equals("One"))
              .peek(obj -> System.out.println("Peeked " + obj))
-             .toList();
+             .toList(); // Peeked Two Peeked Three
+
+
 
         IntStream.of(1,23,54,76, 100, 2,1)
                 .skip(1)

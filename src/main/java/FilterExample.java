@@ -7,7 +7,7 @@ public class FilterExample {
         List<String> names = Arrays.asList("Peter", "Sam", "Greg", "Ryan");
 
         names.stream()
-             // .filter(FilterExample::isNotSam)
+                .filter(FilterExample::isNotSam)
                 .filter(name -> !name.equals("Sam"))
                 .forEach(System.out::println); // Peter Greg Ryan
     }

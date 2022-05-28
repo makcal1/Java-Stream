@@ -11,6 +11,8 @@ public class OptionalExample {
                 .filter(filter -> filter.equalsIgnoreCase("Sachin"))
                 .findAny();
 
+        System.out.println(optional.get());// Sachin
+
 
     }
 }

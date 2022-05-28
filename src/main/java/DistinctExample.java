@@ -11,5 +11,7 @@ public class DistinctExample {
                 .map(text -> text.substring(0, 5))
                 .distinct()
                 .sorted().toList();
+
+        System.out.println(sortedNames); // [Taiwa, Turki]
     }
 }
